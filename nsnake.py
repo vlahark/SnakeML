@@ -6,13 +6,18 @@ pygame.font.init()
 random.seed()
 
 #Global constant definitions
-SPEED = 0.6
+
+#
+#SPEED MULTIPLIED BY FPS HAS TO BE EQUAL 9 OTHERWISE APP CAN CRASH
+#
+
+FPS = 10
+SPEED = 0.9
 SNAKE_SIZE = 9
 APPLE_SIZE = SNAKE_SIZE
 SEPARATION = 10
 SCREEN_HEIGHT = 600
 SCREEN_WIDTH = 800
-FPS = 15
 KEY = {"UP":1,"DOWN":2,"LEFT":3,"RIGHT":4}
 #Screen initialization
 screen = pygame.display.set_mode((SCREEN_WIDTH,SCREEN_HEIGHT),pygame.HWSURFACE)
